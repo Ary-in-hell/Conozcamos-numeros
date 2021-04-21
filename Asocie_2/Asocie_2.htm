@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--Created by Ardora - www.webardora.net-->
+<!--ArdoraRel-->
+<!--bajo licencia Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+para otros usos contacte con el autor-->
+<html lang="es">
+<head><meta charset="utf-8" /><title>Asociar número e imagen - Nivel 2</title>
+<link type="text/css" href="Asocie_2_resources/css/ardoraRel.css" rel="stylesheet" />
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery.js"></script>
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery-ui.min.js"></script>
+<script language="javascript" type="text/javascript" src="../ardoraFiles/js/jquery.ui.touch-punch.min.js"></script>
+<script language="javascript" type="text/javascript" src="Asocie_2_resources/js/ardoraRelCFG.js"></script>
+<script language="javascript" type="text/javascript" src="Asocie_2_resources/js/ardoraScorm.js"></script>
+<script language="javascript" type="text/javascript" src="Asocie_2_resources/js/ardoraRel.js"></script>
+<script language="javascript" type="text/javascript" src="Asocie_2_resources/js/ardoraTab.js"></script>
+</head>
+<body onLoad="loadPage()" onbeforeunload="unloadPage()" onUnload="unloadPage()">
+<div id="ardoraMain">
+<audio id="audioEnu">
+<source src="Asocie_2_resources/media/asociar_numero.mp3" type="audio/mp3">
+</audio>
+<audio id="auD1">
+<source src="Asocie_2_resources/media/nueve.mp3" type="audio/mp3">
+</audio>
+<audio id="auD2">
+<source src="Asocie_2_resources/media/10.mp3" type="audio/mp3">
+</audio>
+<audio id="auD3">
+<source src="Asocie_2_resources/media/tres.mp3" type="audio/mp3">
+</audio>
+<audio id="auD4">
+<source src="Asocie_2_resources/media/cuatro.mp3" type="audio/mp3">
+</audio>
+<audio id="auD5">
+<source src="Asocie_2_resources/media/cinco.mp3" type="audio/mp3">
+</audio>
+<audio id="auD6">
+<source src="Asocie_2_resources/media/seis.mp3" type="audio/mp3">
+</audio>
+<audio id="auD7">
+<source src="Asocie_2_resources/media/siete.mp3" type="audio/mp3">
+</audio>
+<audio id="auD8">
+<source src="Asocie_2_resources/media/ocho.mp3" type="audio/mp3">
+</audio>
+<audio id="audioFelicitacion">
+<source src="Asocie_2_resources/media/felicidades.mp3" type="audio/mp3">
+</audio>
+<audio id="audioErro">
+<source src="Asocie_2_resources/media/intenta_de_nuevo.mp3" type="audio/mp3">
+</audio>
+<div id="ardoraEnu"><SPAN style="font-size:40px;color:#FEC239"><b>Asociar número con imagen</b></SPAN><br><SPAN style="font-size:24px;color:#FF5658">Nivel 2</SPAN><br><br><SPAN style="font-size:30px;color:#000000">Asocia el número con su escritura utilizando las flechas color rojo para pasar las imágenes. Cuando encontrés el nombre del número, presiona el botón con el símbolo </SPAN><SPAN style="font-size:30px;color:#000000"><b>| </b></SPAN><SPAN style="font-size:30px;color:#000000"><b><u>?</u></b></SPAN><SPAN style="font-size:30px;color:#000000"><b> |</b></SPAN><br><br></div>
+  <div id="ardoraAct">
+<div id="tableL"><div class="cell"><div id="buttonUpLeft" class="butt"><canvas id="bUpLCanvas" width="400px" height="40px"></canvas></div>
+<div id="contenL"></div><div id="buttonDownLeft" class="butt"><canvas id="bDownLCanvas" width="400px" height="40px"></canvas></div></div></div>
+<div id="tableR"><div class="cell"><div id="buttonUpRight" class="butt"><canvas id="bUpRCanvas" width="400px" height="40px"></canvas></div>
+<div id="contenR"></div><div id="buttonDownRight" class="butt"><canvas id="bDownRCanvas" width="400px" height="40px"></canvas></div></div></div>
+<canvas id="ardoraActCanvas" width="2px" height="2px"></canvas>
+  </div>
+<div id="ardoraTab">
+  <div id="buttonOk"><canvas id="buttonOkCanvas" width="70" height="70"></canvas></div>
+</div></div>
+<div id="ardoraAlumSCORM"><p></p></div>
+<div id="ardoraAutor"><p>Creado por Sharon JG para el curso Las TIC y las NEE 2105 (2021)</p></div>
+</body></html>
